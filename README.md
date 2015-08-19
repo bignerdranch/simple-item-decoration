@@ -92,7 +92,26 @@ recyclerView.addItemDecoration(new GridBottomOffsetItemDecoration(offsetPx, numC
 
 ###Project Setup
 
-**TODO**
+**SimpleItemDecoration** uses [JitPack.io](https://jitpack.io/#bignerdranch/simple-item-decoration) for hosting.
+Add the following to your build.gradle:
+
+The repository:
+
+```groovy
+repositories {
+    // ...
+    maven { url "https://jitpack.io" }
+}
+```
+
+...and the dependency, replacing "\<release tag\>" with the name of the release tag:
+
+```groovy
+dependencies {
+    // ...
+    compile 'com.github.bignerdranch:simple-item-decoration:<release tag>'
+}
+```
 
 ###Contribute
 
