@@ -1,11 +1,11 @@
 #Simple Item Decoration
 
 
-SimpleItemDecoration is a library for adding dividers and offsets to Android's `RecyclerView` using `RecyclerView.ItemDecoration`.
+SimpleItemDecoration is a library for adding dividers and offsets to Android's RecyclerView using RecyclerView.ItemDecoration.
 
-Decorations can be added to interior dividers between elements and start/end offsets. SimpleItemDecoration can be used with `LinearLayoutManager` or `GridLayoutManager`.
+Decorations can be added to interior dividers between elements and start/end offsets. SimpleItemDecoration can be used with LinearLayoutManager or GridLayoutManager.
 
-###Usage
+##Usage
 
 SimpleItemDecoration includes six ItemDecorations: start, end, and divider decorators for linear RecyclerViews and start, end, and divider decorators for grid RecyclerViews. 
 
@@ -92,24 +92,32 @@ recyclerView.setLayoutManager(new GridLayoutManager(..., numColumns));
 recyclerView.addItemDecoration(new GridBottomOffsetItemDecoration(offsetPx, numColumns));
 ```
 
-###Project Setup
+##Download
 
-The latest release can be used by adding the following to your app's build.gradle:
+[v1.0.0 AAR](http://repo1.maven.org/maven2/com/bignerdranch/android/simple-item-decoration/1.0.0/simple-item-decoration-1.0.0.aar)
+
+**Gradle**
+
 ```
 compile 'com.bignerdranch.android:simple-item-decoration:1.0.0'
 ```
 
-You can also clone the project and add it as a module to your project.
-
-###Contribute
-
-Improvements/additions are encouraged. Clone the project with:
+**Maven**
 
 ```
-git clone https://github.com/bignerdranch/simple-item-decoration.git
+<dependency>
+    <groupId>com.bignerdranch.android</groupId>
+    <artifactId>simple-item-decoration</artifactId>
+    <version>1.0.0</version>
+</dependency>
 ```
 
-###License
+
+##Contribute
+
+TODO add standard BNR Contribute text
+
+##License
 
 ```
 The MIT License
