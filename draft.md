@@ -7,9 +7,9 @@ Decorations can be added to interior dividers between elements and start/end off
 
 ##Usage
 
-SimpleItemDecoration includes six ItemDecorations: start, end, and divider decorators for linear RecyclerViews and start, end, and divider decorators for grid RecyclerViews. 
+SimpleItemDecoration includes six ItemDecorations: start, end, and divider decoration for linear RecyclerViews and start, end, and divider decoration for grid RecyclerViews. 
 
-Instantiate one or more of these decorators and add to a standard RecyclerView.
+Instantiate one or more of these decoration and add to a standard RecyclerView.
 
 
 ####DividerItemDecoration
