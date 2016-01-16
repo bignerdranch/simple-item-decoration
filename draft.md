@@ -14,6 +14,10 @@ SimpleItemDecoration includes six ItemDecorations: start, end, and divider decor
 Instantiate one or more of these decoration and add to a standard RecyclerView.
 
 
+##Linear Decorations
+
+**TODO add sample screen gifs**
+
 ####DividerItemDecoration
 
 `DividerItemDecoration` is used to add interior dividers to a linear RecyclerView. Its constructor takes in a divider as a Drawable.
@@ -25,8 +29,6 @@ Drawable dividerDrawable = ContextCompat.getDrawable(this, R.drawable.divider_sa
 
 recyclerView.addItemDecoration(new DividerItemDecoration(dividerDrawable));
 ```
-
-
 
 ####StartOffsetItemDecoration
 
@@ -51,6 +53,10 @@ int offsetPx = 10;
 
 recyclerView.addItemDecoration(new EndOffsetItemDecoration(offsetPx));
 ```
+
+##Grid Decorations
+
+**TODO add sample screen gifs**
 
 ####GridDividerItemDecoration
 
@@ -117,7 +123,7 @@ compile 'com.bignerdranch.android:simple-item-decoration:1.0.0'
 
 ##Contribute
 
-TODO add standard BNR Contribute text
+**TODO add standard BNR Contribute text**
 
 ##License
 
