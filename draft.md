@@ -2,7 +2,6 @@
 
 <a href="http://www.methodscount.com/?lib=com.bignerdranch.android%3Asimple-item-decoration%3A1.0.0"><img src="https://img.shields.io/badge/Methods and size-core: 41 | deps: 11137 | 10 KB-e91e63.svg"></img></a>
 
-
 SimpleItemDecoration is a library for adding dividers and offsets to Android's RecyclerView using RecyclerView.ItemDecoration.
 
 Decorations can be added to interior dividers between elements and start/end offsets. SimpleItemDecoration can be used with LinearLayoutManager or GridLayoutManager.
@@ -13,11 +12,9 @@ SimpleItemDecoration includes six ItemDecorations: start, end, and divider decor
 
 Instantiate one or more of these decoration and add to a standard RecyclerView.
 
-
 ##Linear Decorations
 
 ![](vertical_sample.gif)
-
 
 ####DividerItemDecoration
 
@@ -59,7 +56,6 @@ recyclerView.addItemDecoration(new EndOffsetItemDecoration(offsetPx));
 
 ![](grid_sample.gif)
 
-
 ####GridDividerItemDecoration
 
 `GridDividerItemDecoration` is used to add interior dividers to a grid RecyclerView. Its constructor takes in horizontal and vertical dividers as Drawables, along with the number of grid columns.
@@ -97,7 +93,6 @@ int offsetPx = 10;
 int numColumns = 2;
 
 recyclerView.setLayoutManager(new GridLayoutManager(..., numColumns));
-
 
 recyclerView.addItemDecoration(new GridBottomOffsetItemDecoration(offsetPx, numColumns));
 ```
