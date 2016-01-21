@@ -16,7 +16,8 @@ Instantiate one or more of these decoration and add to a standard RecyclerView.
 
 ##Linear Decorations
 
-**TODO add sample screen gifs**
+![](vertical_sample.gif)
+
 
 ####DividerItemDecoration
 
@@ -56,7 +57,8 @@ recyclerView.addItemDecoration(new EndOffsetItemDecoration(offsetPx));
 
 ##Grid Decorations
 
-**TODO add sample screen gifs**
+![](grid_sample.gif)
+
 
 ####GridDividerItemDecoration
 
