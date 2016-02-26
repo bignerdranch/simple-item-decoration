@@ -35,7 +35,7 @@
                 
                 <p><img src="vertical_sample.gif" alt="vertical sample"/></p>
                 
-                <h3>DividerItemDecoration</h3>
+                <h3 id="divider_item_decoration">DividerItemDecoration</h3>
                 
                 <p>DividerItemDecoration is used to add interior dividers to a linear RecyclerView. Its constructor takes in a divider as a Drawable.</p>
                 
@@ -46,7 +46,7 @@ Drawable dividerDrawable = ContextCompat.getDrawable(this, R.drawable.divider_sa
 recyclerView.addItemDecoration(new DividerItemDecoration(dividerDrawable));
 </code></pre>
 
-                <h3>StartOffsetItemDecoration</h3>
+                <h3 id="start_offset_item_decoration">StartOffsetItemDecoration</h3>
 
                 <p>StartOffsetItemDecoration is used to add an offset to the start of a linear RecyclerView. If the RecyclerView is oriented vertically, the offset will be added to the top of the RecyclerView. If the RecyclerView is oriented horizontally, the offset will be added to the lefthand side of the RecyclerView. Its constructor takes in an offset in pixels.</p>
 
@@ -56,7 +56,7 @@ int offsetPx = 10;
     
 recyclerView.addItemDecoration(new StartOffsetItemDecoration(offsetPx));</code></pre>
 
-                <h3>EndOffsetItemDecoration</h3>
+                <h3 id="end_offset_item_decoration">EndOffsetItemDecoration</h3>
                 
                 <p>EndOffsetItemDecoration is used to add an offset to the end of a linear RecyclerView. If the RecyclerView is oriented vertically, the offset will be added to the bottom of the RecyclerView. If the RecyclerView is oriented horizontally, the offset will be added to the righthand side of the RecyclerView. Its constructor takes in an offset in pixels.</p>
                 
@@ -70,7 +70,7 @@ recyclerView.addItemDecoration(new EndOffsetItemDecoration(offsetPx));</code></p
                 
                 <p><img src="grid_sample.gif" alt="grid sample"/></p>
                 
-                <h3>GridDividerItemDecoration</h3>
+                <h3 id="grid_divider_item_decoration">GridDividerItemDecoration</h3>
                 
                 <p>GridDividerItemDecoration is used to add interior dividers to a grid RecyclerView. Its constructor takes in horizontal and vertical dividers as Drawables, along with the number of grid columns.</p>
                 
@@ -83,7 +83,7 @@ recyclerView.setLayoutManager(new GridLayoutManager(..., numColumns));
                     
 recyclerView.addItemDecoration(new GridDividerItemDecoration(horizontalDivider, verticalDivider, numColumns));</code></pre>
 
-                <h3>GridTopOffsetItemDecoration</h3>
+                <h3 id="grid_top_offset_item_decoration">GridTopOffsetItemDecoration</h3>
 
                 <p>GridTopOffsetItemDecoration is used to add an offset to the top of a grid RecyclerView. Its constructor takes in and offset in pixels and the number of grid columns.</p>
 
@@ -94,7 +94,7 @@ recyclerView.setLayoutManager(new GridLayoutManager(..., numColumns));
 
 recyclerView.addItemDecoration(new GridTopOffsetItemDecoration(offsetPx, numColumns));</code></pre>
 
-                <h3>GridBottomOffsetItemDecoration</h3>
+                <h3 id="grid_bottom_offset_item_decoration">GridBottomOffsetItemDecoration</h3>
 
                 <p>GridBottomOffsetItemDecoration is used to add an offset to the bottom of a grid RecyclerView. Its constructor takes in an offset in pixels and the number of grid columns.</p>
 
