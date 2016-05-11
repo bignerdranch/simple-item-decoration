@@ -44,6 +44,18 @@ public class EndOffsetItemDecoration extends RecyclerView.ItemDecoration {
     }
 
     /**
+     * Constructor that takes in a drawable resource ID referencing a {@link Drawable}
+     * to be drawn at the end of the RecyclerView.
+     *
+     * @param context A context
+     * @param offsetDrawableResId A resource ID referencing a {@code Drawable} to be
+     *                            added to the end of the RecyclerView
+     */
+    public EndOffsetItemDecoration(Context context, @DrawableRes int offsetDrawableResId) {
+        mOffsetDrawable = ContextCompat.getDrawable(context, offsetDrawableResId);
+    }
+
+    /**
      * Determines the size and location of the offset to be added to the end
      * of the RecyclerView.
      *

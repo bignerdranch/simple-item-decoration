@@ -17,13 +17,25 @@ public class DividerItemDecoration extends RecyclerView.ItemDecoration {
     private int mOrientation;
 
     /**
-     * Sole constructor. Takes in a {@link Drawable} to be used as the interior
+     * Constructor that takes in a {@link Drawable} to be used as the interior
      * divider.
      *
      * @param divider A divider {@code Drawable} to be drawn on the RecyclerView
      */
     public DividerItemDecoration(Drawable divider) {
         mDivider = divider;
+    }
+
+    /**
+     * Constructor that takes in a drawable resource ID referencing a {@link Drawable}
+     * to be used as the interior divider.
+     *
+     * @param context A context
+     * @param dividerResId A resource ID referencing a divider {@code Drawable}
+     *                     to be drawn on the RecyclerView
+     */
+    public DividerItemDecoration(Context context, @DrawableRes int dividerResId) {
+        mDivider = ContextCompat.getDrawable(context, dividerResId);
     }
 
     /**
