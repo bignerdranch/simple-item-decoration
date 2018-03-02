@@ -21,9 +21,9 @@ public class GridDividerItemDecoration extends RecyclerView.ItemDecoration {
      *
      * @param horizontalDivider A divider {@code Drawable} to be drawn on the
      *                          rows of the grid of the RecyclerView
-     * @param verticalDivider   A divider {@code Drawable} to be drawn on the
-     *                          columns of the grid of the RecyclerView
-     * @param numColumns        The number of columns in the grid of the RecyclerView
+     * @param verticalDivider A divider {@code Drawable} to be drawn on the
+     *                        columns of the grid of the RecyclerView
+     * @param numColumns The number of columns in the grid of the RecyclerView
      */
     public GridDividerItemDecoration(Drawable horizontalDivider, Drawable verticalDivider, int numColumns) {
         mHorizontalDivider = horizontalDivider;
@@ -36,7 +36,7 @@ public class GridDividerItemDecoration extends RecyclerView.ItemDecoration {
      *
      * @param canvas The {@link Canvas} onto which dividers will be drawn
      * @param parent The RecyclerView onto which dividers are being added
-     * @param state  The current RecyclerView.State of the RecyclerView
+     * @param state The current RecyclerView.State of the RecyclerView
      */
     @Override
     public void onDraw(Canvas canvas, RecyclerView parent, RecyclerView.State state) {
@@ -50,9 +50,9 @@ public class GridDividerItemDecoration extends RecyclerView.ItemDecoration {
      * RecyclerView.
      *
      * @param outRect The {@link Rect} of offsets to be added around the child view
-     * @param view    The child view to be decorated with an offset
-     * @param parent  The RecyclerView onto which dividers are being added
-     * @param state   The current RecyclerView.State of the RecyclerView
+     * @param view The child view to be decorated with an offset
+     * @param parent The RecyclerView onto which dividers are being added
+     * @param state The current RecyclerView.State of the RecyclerView
      */
     @Override
     public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
