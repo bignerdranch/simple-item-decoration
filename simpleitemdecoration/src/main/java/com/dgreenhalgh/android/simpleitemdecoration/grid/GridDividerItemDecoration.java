@@ -58,12 +58,19 @@ public class GridDividerItemDecoration extends RecyclerView.ItemDecoration {
     public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
         super.getItemOffsets(outRect, view, parent, state);
 
-        boolean childIsInLeftmostColumn = (parent.getChildAdapterPosition(view) % mNumColumns) == 0;
-        if (!childIsInLeftmostColumn) {
-            outRect.left = mHorizontalDivider.getIntrinsicWidth();
+        int childAdapterPosition = parent.getChildAdapterPosition(view);
+
+        // proportion the offsets correctly given a fixed width
+        if (mNumColumns > 1) {
+            int columnPosition = childAdapterPosition % mNumColumns;
+            int nudge = Math.round((float) mHorizontalDivider.getIntrinsicWidth() / mNumColumns);
+
+            outRect.left = columnPosition * nudge;
+            outRect.right = (mNumColumns - columnPosition - 1) * nudge;
         }
 
-        boolean childIsInFirstRow = (parent.getChildAdapterPosition(view)) < mNumColumns;
+        // vertical offset is constant
+        boolean childIsInFirstRow = childAdapterPosition < mNumColumns;
         if (!childIsInFirstRow) {
             outRect.top = mVerticalDivider.getIntrinsicHeight();
         }
