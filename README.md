@@ -1,11 +1,11 @@
-#Simple Item Decoration
+# Simple Item Decoration
 
 A library for adding dividers and offsets to Android's RecyclerView using RecyclerView.ItemDecoration.
 
 For more information please see [the website](http://bignerdranch.github.io/simple-item-decoration/).
 
 
-##Download
+## Download
 
 [v1.0.0 AAR](http://repo1.maven.org/maven2/com/bignerdranch/android/simple-item-decoration/1.0.0/simple-item-decoration-1.0.0.aar)
 
