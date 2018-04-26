@@ -92,13 +92,16 @@ public class GridDividerItemDecoration extends RecyclerView.ItemDecoration {
             View firstRowChild = parent.getChildAt(i);
             View lastRowChild = parent.getChildAt(lastRowChildIndex);
 
-            int dividerTop = firstRowChild.getTop();
-            int dividerRight = firstRowChild.getLeft();
-            int dividerLeft = dividerRight - mHorizontalDivider.getIntrinsicWidth();
-            int dividerBottom = lastRowChild.getBottom();
+            // handle case where first row is not full
+            if (firstRowChild != null) {
+                int dividerTop = firstRowChild.getTop();
+                int dividerRight = firstRowChild.getLeft();
+                int dividerLeft = dividerRight - mHorizontalDivider.getIntrinsicWidth();
+                int dividerBottom = lastRowChild.getBottom();
 
-            mHorizontalDivider.setBounds(dividerLeft, dividerTop, dividerRight, dividerBottom);
-            mHorizontalDivider.draw(canvas);
+                mHorizontalDivider.setBounds(dividerLeft, dividerTop, dividerRight, dividerBottom);
+                mHorizontalDivider.draw(canvas);
+            }
         }
     }
 
