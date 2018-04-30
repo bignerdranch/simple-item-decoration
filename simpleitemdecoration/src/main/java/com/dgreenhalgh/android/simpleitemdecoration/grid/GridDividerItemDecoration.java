@@ -111,7 +111,13 @@ public class GridDividerItemDecoration extends RecyclerView.ItemDecoration {
      */
     private void drawVerticalDividers(Canvas canvas, RecyclerView parent) {
         int childCount = parent.getChildCount();
+
+        // number of full rows
         int rowCount = childCount / mNumColumns;
+        if ((childCount % mNumColumns) == 0) {
+            rowCount--;
+        }
+
         int rightmostChildIndex;
         for (int i = 1; i <= rowCount; i++) {
             if (i == rowCount) {
