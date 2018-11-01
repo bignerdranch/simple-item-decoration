@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/activity_vertical_linear_layout_manager_sample_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

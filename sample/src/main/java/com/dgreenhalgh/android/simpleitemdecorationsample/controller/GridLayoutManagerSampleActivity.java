@@ -5,10 +5,10 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.dgreenhalgh.android.simpleitemdecoration.grid.GridDividerItemDecoration;
 import com.dgreenhalgh.android.simpleitemdecoration.grid.GridBottomOffsetItemDecoration;
@@ -19,8 +19,7 @@ import com.dgreenhalgh.android.simpleitemdecorationsample.view.DividerControlsVi
 
 import java.util.List;
 
-
-public class GridLayoutManagerSampleActivity extends ActionBarActivity {
+public class GridLayoutManagerSampleActivity extends AppCompatActivity {
 
     private static final int NUM_COLUMNS = 3;
 
