@@ -5,10 +5,10 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.dgreenhalgh.android.simpleitemdecoration.linear.DividerItemDecoration;
 import com.dgreenhalgh.android.simpleitemdecoration.linear.EndOffsetItemDecoration;
@@ -20,7 +20,7 @@ import com.dgreenhalgh.android.simpleitemdecorationsample.view.DividerControlsVi
 import java.util.List;
 
 
-public class VerticalLinearLayoutManagerSampleActivity extends ActionBarActivity {
+public class VerticalLinearLayoutManagerSampleActivity extends AppCompatActivity {
 
     private DividerControlsView mDividerControlsView;
     private RecyclerView mRecyclerView;
