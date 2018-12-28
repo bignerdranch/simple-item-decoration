@@ -16,7 +16,7 @@ public class GridDividerItemDecoration extends RecyclerView.ItemDecoration {
     private int mNumColumns;
 
     /**
-     * Sole constructor. Takes in {@link Drawable} objects to be used as
+     * Constructor that takes in {@link Drawable} objects to be used as
      * horizontal and vertical dividers.
      *
      * @param horizontalDivider A divider {@code Drawable} to be drawn on the
@@ -28,6 +28,24 @@ public class GridDividerItemDecoration extends RecyclerView.ItemDecoration {
     public GridDividerItemDecoration(Drawable horizontalDivider, Drawable verticalDivider, int numColumns) {
         mHorizontalDivider = horizontalDivider;
         mVerticalDivider = verticalDivider;
+        mNumColumns = numColumns;
+    }
+
+    /**
+     * Constructor that takes in drawable resource IDs referencing {@link Drawable}
+     * objects to be drawn at the bottom of the RecyclerView.
+     *
+     * @param context A context
+     * @param horizontalDividerResId A resource ID referencing a divider {@code Drawable}
+     *                               to be drawn on the rows of the grid of the RecyclerView
+     * @param verticalDividerResId A resource ID referencing a divider {@code Drawable}
+     *                             to be drawn on the columns of the grid of the RecyclerView
+     * @param numColumns The number of columns in the grid of the RecyclerView
+     */
+    public GridDividerItemDecoration(Context context, @DrawableRes int horizontalDividerResId,
+                                     @DrawableRes int verticalDividerResId, int numColumns) {
+        mHorizontalDivider = ContextCompat.getDrawable(context, horizontalDividerResId);
+        mVerticalDivider = ContextCompat.getDrawable(context, verticalDividerResId);
         mNumColumns = numColumns;
     }
 

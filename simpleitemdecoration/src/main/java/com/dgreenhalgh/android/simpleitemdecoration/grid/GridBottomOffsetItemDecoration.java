@@ -43,6 +43,21 @@ public class GridBottomOffsetItemDecoration extends RecyclerView.ItemDecoration 
     }
 
     /**
+     * Constructor that takes in a drawable resource ID referencing a {@link Drawable}
+     * to be drawn at the bottom of the RecyclerView.
+     *
+     * @param context A context
+     * @param offsetDrawableResId A resource ID referencing the {@code Drawable}
+     *                            to be added to the bottom of the RecyclerView
+     * @param numColumns The number of columns in the grid of the RecyclerView
+     */
+    public GridBottomOffsetItemDecoration(Context context, @DrawableRes int offsetDrawableResId,
+                                          int numColumns) {
+        mOffsetDrawable = ContextCompat.getDrawable(context, offsetDrawableResId);
+        mNumColumns = numColumns;
+    }
+
+    /**
      * Determines the size and the location of the offset to be added to the
      * bottom of the RecyclerView.
      *
